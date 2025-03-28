@@ -11,14 +11,12 @@ int main(){
     } 
     for(int i=0; i < n;i++){
         printf("Enter process %d Burst Time :: ",pid[i]);
-        scanf("%d",&bt[i]);
+        scanf("%d",&bt[i]); 
+        k=k+bt[i];  
+        rt[i]=bt[i]; 
 } 
 printf("enter the time quantum :"); 
 scanf("%d",&g); 
-for(i=0;i<n;i++){ 
-k=k+bt[i];  
-rt[i]=bt[i]; 
-}  
 ct[0]=0;
 while(j<k){ 
     for(i=0;i<n;i++){ 
